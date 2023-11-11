@@ -1,7 +1,7 @@
-# Bash setup script for Ubuntu servers
+# Bash setup script for Debian servers
 [![Build Status](https://travis-ci.org/jasonheecs/ubuntu-server-setup.svg?branch=master)](https://travis-ci.org/jasonheecs/ubuntu-server-setup)
 
-This is a setup script to automate the setup and provisioning of Ubuntu servers. It does the following:
+This is a setup script to automate the setup and provisioning of Debian servers. It does the following:
 * Adds or updates a user account with sudo access
 * Adds a public ssh key for the new user account
 * Disables password authentication to the server
@@ -21,12 +21,12 @@ sudo apt-get install git
 Clone this repository into your home directory:
 ```bash
 cd ~
-git clone https://github.com/jasonheecs/ubuntu-server-setup.git
+git clone https://github.com/danrochman/debian-server-setup.git
 ```
 
 Run the setup script
 ```bash
-cd ubuntu-server-setup
+cd debian-server-setup
 bash setup.sh
 ```
 
@@ -42,7 +42,7 @@ cat ~/.ssh/user_server_ed25519.pub
 Finally, you will be prompted to specify a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) for the server. It will be set to 'Asia/Singapore' if you do not specify a value.
 
 # Supported versions
-This setup script has been tested against Ubuntu 14.04, Ubuntu 16.04, Ubuntu 18.04, Ubuntu 20.04 and Ubuntu 22.04.
+This setup script has been tested against Debian 12.2 ("Bookworm")
 
 # Running tests
 Tests are run against a set of Vagrant VMs. To run the tests, run the following in the project's directory:  
