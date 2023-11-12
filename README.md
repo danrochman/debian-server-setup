@@ -1,6 +1,12 @@
 # Bash setup script for Debian servers
 [![Build Status](https://travis-ci.org/jasonheecs/ubuntu-server-setup.svg?branch=master)](https://travis-ci.org/jasonheecs/ubuntu-server-setup)
 
+To-Do
+- [ ] Get rid of Travis-CI references, update unit test(s), migrate to GitHub Actions
+- [ ] Add user
+- [ ] Install Caddy & upload Caddyfile
+- [ ] Install Fail2ban
+
 This is a setup script to automate the setup and provisioning of Debian servers. It does the following:
 * Adds or updates a user account with sudo access
 * Adds a public ssh key for the new user account
